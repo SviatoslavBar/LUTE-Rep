@@ -1,0 +1,78 @@
+@import "src/app/pages/faculty/facultyStyles.scss";
+
+.imageBox {
+    background-image: url(/assets/images/mev2.jpg);
+}
+@media screen and (max-width: 1250px) {
+    .container{
+        width: 1100px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .container{
+        width: 750px;
+    }
+    .textBox{
+        width: 400px;
+        h2{
+            font-size: 31px;
+        }
+    }
+    .icons{ 
+       width: 330px;
+    }
+    .dividerXL{
+        width: 355px;
+    }
+    .imageBox{
+        width: 350px;
+    }
+    .spet{
+        margin-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .imageBox{
+        position: absolute;
+        height: 450px;
+        width: 100%;
+        background-position: top;
+    }
+    .textBox{
+        position: relative;
+        margin-top: 400px;
+        width: 100%;
+        padding-left: 30px;
+    }
+    .icons{
+        padding-right: 30px;
+        width: unset;
+    }
+    .dividerXL{
+        width: unset;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .leftMenu{
+        padding-left: unset;
+        width: unset;
+        .cathedra{
+            width: unset;
+        }
+        .divider{
+            width: unset;
+        }
+    }
+    .text{
+        margin-left: unset;
+    }
+}
+@media screen and (max-width: 480px) {
+
+}
+

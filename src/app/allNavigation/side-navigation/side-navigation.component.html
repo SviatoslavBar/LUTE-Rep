@@ -1,0 +1,90 @@
+<nav class="navBAR">
+    <div class="logo">
+        <a (click)="closeNavigation()" [routerLink]="['/abit']">LUTE</a>
+    </div>
+    <div class="navBlock">
+        <ul class="navUL">
+
+            <!-- <li class="navLI">
+                <a class="link" (click)="toggleAbout()">Про університет</a>
+            </li> -->
+        </ul>
+         
+            
+            <div class="menu-wrap ngBur1" *ngIf="!clicked" >
+              <input type="checkbox" class="toggler click" (click)="toggleBurger()" id="zClick">
+              <div class="hamburger" (click)="closeNavigation()"><div></div></div>
+              
+              <div class="menu" class="sidenav" [@openClose]="isOpenBurger ? 'open' : 'close'">
+                <div class="linksBurg">
+                    <a (click)="bip()"  [routerLink]="['/abit']">Абітурієнтам</a>
+                    <a (click)="bip()"  [routerLink]="['/contacts']">Контакти</a>
+                    <a (click)="bip()"  [routerLink]="['/history']">Історія університету</a>
+                    <a (click)="bip()"  [routerLink]="['/vstupInfo']">Питання та відповіді</a>
+                </div>
+              </div>
+            </div>
+            <div class="menu-wrap" *ngIf="clicked">
+                <input type="checkbox" class="toggler click" (click)="togClicked()">
+                <div class="hamburger" (click)="togClicked()"><div></div></div>
+            </div>  
+        
+            <!-- /////////////////////////////////////
+            //////////////////////////////////// phone -->
+         
+            
+            <div class="menu-wrap ngBur2" *ngIf="!clicked" >
+              <input type="checkbox" class="toggler click" (click)="toggleBurger()" id="zClick2">
+              <div class="hamburger" (click)="closeNavigation()"><div></div></div>
+              
+              <div class="menu" class="sidenav" [@openClosePhone]="isOpenBurger ? 'open' : 'close'">
+                   
+                <div class="linksBurg">
+                   
+                    <a class="link" (click)="bip2()" [routerLink]="['/abit']">Абітурієнтам</a>
+                    <a class="link" (click)="bip2()" [routerLink]="['/contacts']">Контакти</a>
+                    <a class="link" (click)="bip2()" [routerLink]="['/history']">Історія університету</a>
+                    <a class="link" (click)="bip2()" [routerLink]="['/vstupInfo']">Питання та відповіді</a>
+                </div>
+            
+              </div>
+            </div>
+            <div class="menu-wrap" *ngIf="clicked" >
+                <input type="checkbox" class="toggler click" (click)="togClicked()">
+                <div class="hamburger" (click)="togClicked()"><div></div></div>
+              </div>
+            
+    </div>
+
+</nav>
+
+<ng-container *ngIf="formatPhone">
+
+
+    <!-- ////////////// Про університет -->
+    <div id="sideAbout" class="sidenav" [@openClose]="isOpenAbout ? 'open' : 'closed'" >
+        <!-- <a href="javascript:void(0)" class="closebtn" (click)="toggleAbout()">&times;</a> -->
+        <a (click)="bip()"  [routerLink]="['/abit']">Абітурієнтам</a>
+        <a (click)="bip()" [routerLink]="['/contacts']">Контакти</a>
+        <a (click)="bip()"  [routerLink]="['/history']">Історія університету</a>
+        
+       <!--  <ng-container *ngFor="let name of universityLinks">
+            <a (click)="closeNavigation()" href="{{name.link}}" [routerLink]="['/name.link']">{{name.names}}</a>
+        </ng-container> -->
+
+    </div>
+<ng-container *ngIf="!formatPhone">
+
+        <!-- ////////////// Про університет -->
+        <div id="sideAbout" class="sidenav" [@openClosePhone]="isOpenAbout ? 'open' : 'close'" >
+            <a href="javascript:void(0)" class="closebtn" (click)="toggleAbout()">&times;</a>
+            <a (click)="bip()"  [routerLink]="['/history']">Історія університету</a>
+            <a (click)="bip()"  [routerLink]="['/abit']">Абітурієнтам</a>
+            <a (click)="bip()" [routerLink]="['/contacts']">Контакти</a>
+            <!-- <ng-container *ngFor="let name of universityLinks">
+                <a (click)="closeNavigation()" href="{{name.link}}" [routerLink]="['/name.link']">{{name.names}}</a>
+            </ng-container> -->
+
+        </div>
+        
+</ng-container>

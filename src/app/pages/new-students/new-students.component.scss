@@ -1,0 +1,611 @@
+@import "src/app/styles/stylesMain/_elementStyles.scss";
+
+.tooltip {
+    position: relative;
+    display: inline-block;  
+    width: 110px;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    width: 240px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 80%;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+  .tooltip:hover .tooltiptext {
+    transition: 0.37s;
+    visibility: visible;
+    opacity: 1;
+  }
+  .imm{
+      background: url(src/assets/images/help-question-mark-icon-26.jpg);
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+      margin-left: 36px;
+  }
+/////////
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: roboto;
+  }
+.forNewContainer{
+    width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    // margin-bottom: 100px;
+    margin-top: 100px;
+   /*  padding-bottom: 100px;
+    border-bottom: 2px solid green; */
+}
+.guide{
+    border-bottom: 2px solid green;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        transition: 0.2s;
+    }
+}
+.guide :hover{
+    color: green;
+}
+
+.guideContainer{
+    width: 572px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.alignCenter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+}
+.firstGuideBox{
+    width: 250px;
+    height: 206px;
+    border-radius: 32% 59% 56% 57%;
+    background: lightgray; 
+}
+.secondGuideBox{
+    width: 250px;
+    height: 206px;
+    border-radius: 82% 59% 56% 57%;
+    background: lightgray;
+    margin-left: 318px;
+    margin-top: -77px;
+}
+.thirdGuideBox{
+    width: 250px;
+    height: 206px;
+    border-radius: 50% 46% 56% 33%;
+    background: lightgray;
+    margin-top: -83px;
+}
+.fourGuideBox{
+    width: 250px;
+    height: 206px;
+    border-radius: 32% 59% 56% 57%;
+    background: lightgray;
+    margin-left: 250px;
+    margin-top: -50px;
+} 
+
+ .h2Search{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 100px;
+ }
+ .facultyButtons{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 50px;
+ }
+#pFaculty{
+    margin: 0px 20px 0px 20px;
+    border-left: 3px solid gray;
+    border-right: 3px solid gray;
+    padding: 0 15px 0 15px;
+   
+}
+.facultyList{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.facult{
+    height: 220px;
+    width: 220px;
+    border: 1px solid;
+    border-radius: 100%;
+    margin: 0px 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.mev{
+    background-size: cover;
+    background:white;
+    color: black;
+    a{
+        transition: 0.4s;
+    }
+}
+.mev:hover{
+    
+    
+    background-image: url(/assets/images/mev2-icon.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 0%;
+    border: 0 solid white;
+        a{
+            color: white;
+            font-size: 40px;
+        }
+}
+
+.tuso{
+    background-size: cover;
+    background:white;
+    color: black;
+    
+    a{
+        transition: 0.4s;
+    }
+}
+.tuso:hover{
+    color: white;
+    font-size: 40px;
+    background-image: url(/assets/images/TUSO-icon.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 0%;
+    border: 0 solid white;
+    a{
+        color: white;
+        font-size: 40px;
+        
+    }
+}
+.if{
+    background-size: cover;
+    background:white;
+    color: black;
+  
+    a{
+        transition: 0.4s;
+    }
+}
+.if:hover{
+    color: white;
+    font-size: 40px;
+    background-image: url(/assets/images/IF-icon.jpg);
+    background-size: cover;
+    width: 350px;
+        height: 350px;
+        border-radius: 0%;
+        border: 0 solid white;
+        a{
+            color: white;
+            font-size: 40px;
+        }
+}
+.urf{
+    background-size: cover;
+    background:white;
+    color: black;
+    a{
+        transition: 0.4s;
+    }
+}
+.urf:hover{
+    color: white;
+    font-size: 40px;
+    background-image: url(/assets/images/UF2_icon.jpg);
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    border-radius: 0%;
+    border: 0 solid white;
+    a{
+        color: white;
+        font-size: 40px;
+    }
+}
+
+
+
+.facultyButtons p{
+    transition: 0.4s;
+    cursor: pointer;
+    font-size: 20px;
+}
+.facultyButtons p:hover{
+    text-decoration: underline;
+}
+
+.listyle{
+    transition: none;
+    
+}
+.listNone{
+    list-style-type: none;
+}
+
+.forNewBox .listyle:hover{
+    text-decoration: underline;
+    color: green;
+}
+.arrow3{
+    width: 180px;
+    height: 107px;
+    position: absolute;
+    background: url(src/app/gallery/arrow3.jpg);
+    transform: rotate(37deg);
+    margin-top: 191px;
+    margin-left: -48px;
+    background-size: contain;
+}
+
+.background{
+    width: 100%;
+    height: 500px;
+    background-image: url(/assets/images/backAbit3.jpg);
+    background-position-y: -110px;
+    background-size: cover;
+    left: 0;
+    top: 0px;
+    font-family: roboto;
+}
+.searchFacultyContainer{
+    min-height: 430px;
+    margin-bottom: 250px;
+}
+.h1_underline{
+    font-size: 60px;
+    padding-top: 26px;
+    color: white;
+    margin-left: 60px;
+    text-shadow: 2px 1px 0px black;
+}
+.facultyNames, .facultySearch{
+    width: 1100px;
+    margin: 0 auto;
+}
+.facultyNames p ,.facultySearch p{
+    font-size: 20px;
+}
+.facultyNames input ,.facultySearch input{
+    width: 1100px;
+    height: 60px;
+    font-size: 25px;
+}
+select{
+    width: 200px;
+    height: 40px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-transform: none;
+    word-wrap: normal;
+}
+option{
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+}
+.nameFaculties{
+    font-weight: bold;
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        color: white;
+        font-size: 40px;
+    }
+}
+
+
+
+.table{
+    font-family: roboto-regular;
+    width: 100%;
+    color: #212529;
+    border-collapse: collapse;
+    display: table;
+    box-sizing: border-box;
+    border-spacing: 2px;
+    border-color: grey;
+    font-size: 1rem;
+    margin: 50px auto;
+    margin-bottom: 200px;
+}
+thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.table thead th{
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table th{
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+}
+th{
+    text-align: inherit;
+}
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.table td{
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+td{
+    display: table-cell;
+}
+
+///////////////////
+
+
+.buttonSearch {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    overflow:hidden;
+    transition: .3s;
+    &:after {
+      position: absolute;
+      transition: .3s;
+      content: '';
+      width: 0;
+      left: 50%;
+      bottom: 0;
+      height: 3px;
+      background: black;
+    }
+   
+    &:nth-of-type(1):after {
+      height: 40px;
+      left: -10%;
+      transform: skewX(15deg);
+      z-index: -1;
+    }
+    &:hover {
+      cursor: pointer;
+      &:after {
+        width: 70px;
+        left: 0;
+      }
+      &:nth-of-type(1) {
+        color: white;
+      }
+      &:nth-of-type(1):after {
+        left: -10%;
+        width: 120%;
+      }
+    }
+  }
+
+  
+
+  @media screen and (max-width: 1250px) {
+
+    .container{
+        width: 1100px;
+    }
+    .background{
+        background-position-y: unset;
+        background-position: center;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px) { //////////// маленькі екрани або ноутбуки
+
+    .container {
+        width: 750px;
+    }
+    .forNewContainer{
+        width: 750px;
+    }
+    .facultyNames{
+        width: 750px;
+    }
+    .facultySearch{
+        width: 750px;
+    }
+    .nameFaculties{
+        a{
+            color: white;
+        }
+    }
+
+    .facultyNames input{
+        width: 100%;
+    }
+
+    .facultyList{
+        flex-wrap: wrap;
+        height: 535px;
+    }
+    .facult{
+        margin: 30px 30px;
+    }
+    .mev{
+        background-size: cover;
+        background-image: url(/assets/images/mev2-icon.jpg);
+        transition: 0.4s;
+        color: white;
+    }
+    
+    .tuso{
+        background-size: cover;
+        background-image: url(/assets/images/TUSO-icon.jpg);
+        transition: 0.4s;
+        color: white;
+    }
+ 
+    .if{
+        background-size: cover;
+        background-image: url(/assets/images/IF-icon.jpg);
+        transition: 0.4s;
+        color: white;
+    }
+    
+    .urf{
+        background-size: cover;
+        background-image: url(/assets/images/UF2_icon.jpg);
+        transition: 0.4s;
+        color: white;
+    }
+    #pred{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) { //////////// планшети
+
+    .container {
+        width: 460px;
+        display: block;
+    }
+    .forNewContainer{
+        width: 460px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .forNewBox{
+        margin-bottom: 30px;
+        width: 380px;
+    }
+    .facultyList{
+        height: 1430px;
+    }
+    .facult{
+        height: 300px;
+        width: 300px;
+    }
+    .h1_underline{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .facultyNames{
+        width: 90%;
+    }
+    .facultySearch{
+        width: 100%;
+    }
+
+    
+   
+}
+@media screen and (max-width: 480px) { //////////// телефони
+
+    .container {
+        width: 95%;
+        display: block;
+    }
+    .background{
+        background-position-y: unset;
+        height: 300px;
+    }
+    .forNewContainer{
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   .h1_underline{
+         font-size: 46px;
+   }
+   .facultyButtons{
+        width: 180px;
+        flex-direction: column;
+        margin-left: 50%;
+        left: -90px;
+        position: relative;
+        p{
+            font-size: 25px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+   }
+   .facult{
+       width: 240px;
+       height: 240px;
+   }
+   #pFaculty{
+       border: unset;
+       margin: unset;
+       padding: unset;
+   }
+
+   .facultySearch{
+    width: 90%;
+        p{
+            margin-bottom: 20px;
+        }
+    }
+    .newFacSpec{
+        form{
+            select{
+                width: 100%;
+            }
+        }
+    }
+    .facultyNames{
+        width: 90%;
+    }
+  
+}
+

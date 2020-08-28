@@ -1,0 +1,236 @@
+*{
+    font-family: roboto;
+}
+
+.background{
+    width: 100%;
+    height: 500px;
+    background-image: url(/assets/images/newsImg.jpg);
+    background-position: top;
+    background-size: cover;
+    left: 0;
+    top: 0px;
+    margin-top: 100px;
+}
+.container{
+    width: 900px;
+    margin: 50px auto;
+    display: flex;
+    margin-bottom: 250px;
+}
+h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+h3{
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 27px;
+    border-bottom: 2px solid green;
+}
+ul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+li{
+    margin-left: 35px;
+}
+.boxInfo ul li{
+    color: green;
+}
+.boxInfo{
+    width: 900px;
+}
+.boxUseful{
+    width: 200px;
+}
+.boxNewStudents{
+    border: 1px solid green;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.boxNewStudents ul li{
+    margin-left: 20px;
+}
+a{
+    color: darkgreen;
+}
+li span{
+    color: black;
+}
+.boxImage{
+    width: 100%;
+    height: 260px;
+    background: url(src/assets/images/howToApply.webp);
+    background-position: bottom;
+    background-size: cover;
+    cursor: pointer;
+}
+.kvadrat{
+    width: 500px;
+    background: rgb(0, 255, 0,0.5);
+}
+.box1{
+    
+    width: 100%;
+    height: 50px;
+}
+.box2{
+   
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+.box3{
+   
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.box4{
+   
+    width: 100%;
+    height: 70px;
+}
+
+.boxbox1{
+    width: 50px;
+    height: 50px;
+    border-right: 3px solid;
+}
+.boxbox3_1{
+    text-align: right;
+    width: 290px;
+}
+.boxbox3_2{
+    width: 50px;
+    height: 50px;
+    border-bottom: 3px solid;
+}
+.boxImage p{
+    width: 200px;
+    font-size: 65px;
+    word-break: break-all;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    text-shadow: black 0 0 1px;
+}
+.leftCont{
+    display: flex;
+    margin-bottom: 100px;
+}
+.pic{
+    width: 300px;
+    height: 300px;
+}
+.textCont{
+    width: 590px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.img1{
+    background: url(src/assets/images/tutorial/download1.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img2{
+    
+    background: url(src/assets/images/tutorial/download3.png);
+    background-size: cover;
+    background-position: -8px;
+}
+.img3{
+    background: url(src/assets/images/tutorial/download4.png);
+    background-size: cover;
+}
+.img4{
+    background: url(src/assets/images/tutorial/download2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img5{
+    background: url(src/assets/images/tutorial/download5.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img6{
+    background: url(src/assets/images/tutorial/downloadLast.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.img7{
+    background: url(src/assets/images/tutorial/downloadAsk.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 950px) { //////////// маленькі екрани або ноутбуки
+    .container{
+        width: 750px;
+    }
+    .boxInfo{
+        width: 750px;
+    }
+    .textCont{
+        width: 465px;
+    }
+    
+}
+@media screen and (max-width: 768px) { //////////// планшети
+    .container {
+        width: 460px;
+    }
+    .boxInfo{
+        width: 460px;
+    }
+    
+    .leftCont{
+        flex-direction: column;
+    }
+    .pic{
+        width: 460px;
+        height: 325px;
+    }
+    .img3{
+        background-position: top;
+    }
+    .img2{
+        background-position: top;
+    }
+
+}
+
+@media screen and (max-width: 480px) { //////////// телефони
+    .container {
+        width: 97%;
+    }
+    .boxInfo{
+        width: 97%;
+    }
+    .textCont{
+        width: 97%;
+    }
+    .background{
+        height: 300px;
+    }
+    .pic{
+        width: 97%;
+    }
+
+}

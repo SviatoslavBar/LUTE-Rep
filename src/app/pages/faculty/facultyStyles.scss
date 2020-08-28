@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+* {
+    font-family: 'Roboto';
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.imageBox {
+    width: 550px;
+    height: 100vh;
+    background-image: url(/assets/images/UF.webp);
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    top: 0px;
+    position: relative;
+}
+
+.textBox {
+    width: 650px;
+    padding-left: 50px;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.textBox h2 {
+    font-size: 45px;
+}
+
+.containBox {
+    display: flex;
+}
+.containBox2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.seeds {
+    display: flex;
+}
+
+.spet {
+    text-align: right;
+    margin-top: 100px;
+    padding-right: 30px;
+    padding-bottom: 150px;
+}
+
+.spet h2 {
+    font-size: 28px;
+}
+
+.spet p {
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.cathedra {
+    margin-top: 50px;
+    width: 210px;
+}
+
+.cathedra p {
+    margin: 5px;
+    
+    a{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: none;
+    color: black;
+    }
+}
+
+.cathedra p a:hover {
+    color: green;
+}
+
+.leftMenu {
+    width: 210px;
+}
+
+.text {
+    margin-top: 50px;
+    margin-left: 50px;
+    border-bottom: 2px solid;
+    padding-bottom: 50px;
+}
+
+.text h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.text ul{
+    margin-bottom: 10px;
+}
+.text h4{
+    font-size: 23px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contacts {
+    margin-top: 10px;
+}
+.divider{
+    height: 10px;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    width: 210px;
+}
+ul{
+    margin-left: 35px;
+}
+.back{
+    cursor: pointer;
+}
+.dividerXL{
+    width: 600px;
+    height: 2px;
+    background: black;
+}
+.icons{
+    width: 600px;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+.gallery{
+    width: 45px;
+    height: 40px;
+    background-image: url(src/assets/images/icons.png);
+    background-position: -15px -45px;
+    background-size: 215px;
+    cursor: pointer;
+}
+.facebook{
+    width: 40px;
+    height: 40px;
+    background-image: url(src/assets/images/icons.png);
+    background-position: -75px -45px;
+    background-size: 215px;
+    cursor: pointer;
+}
+.insta{
+    width: 40px;
+    height: 40px;
+    background-image: url(src/assets/images/icons.png);
+    background-position: -222px -62px;
+    background-size: 268px;
+    cursor: pointer;
+}
+.youTube{
+    width: 45px;
+    height: 40px;
+    background-image: url(src/assets/images/icons.png);
+    background-position: -113px -40px;
+    background-size: 197px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1250px) {
+    .container{
+        width: 1100px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .container{
+        width: 750px;
+    }
+    .textBox{
+        width: 400px;
+        h2{
+            font-size: 31px;
+        }
+    }
+    .icons{ 
+       width: 330px;
+    }
+    .dividerXL{
+        width: 355px;
+    }
+    .imageBox{
+        width: 350px;
+    }
+    .spet{
+        margin-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .imageBox{
+        position: absolute;
+        height: 450px;
+        width: 100%;
+        background-position: top;
+    }
+    .textBox{
+        position: relative;
+        margin-top: 400px;
+        width: 100%;
+        padding-left: 30px;
+    }
+    .icons{
+        padding-right: 30px;
+        width: unset;
+    }
+    .dividerXL{
+        width: unset;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .leftMenu{
+        padding-left: 30px;
+        width: unset;
+        .cathedra{
+            width: unset;
+        }
+        .divider{
+            width: unset;
+        }
+    }
+    .text{
+        margin-left: unset;
+    }
+    .leftMenu{
+        padding-left: unset;
+    }
+}
+@media screen and (max-width: 480px) {
+
+}
+

@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: roboto-regular;
+  src: url(src/assets/font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url(src/assets/font/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: robotoCondensed;
+  src: url(src/assets/font/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+  font-family: robotoCondensedBold;
+  src: url(src/assets/font/RobotoCondensed-Bold.ttf);
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: lightgray; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+

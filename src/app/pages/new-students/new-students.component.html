@@ -1,0 +1,137 @@
+<!-- /////////////////// -->
+
+<body>
+
+    <div class="background">
+        <h2 class="h1_underline">Як приєднатись до нас</h2>
+    </div>
+  <div class="container">
+    
+    <div class="forNewContainer">
+      
+        <div class="forNewBox">
+          <h3>Вступ</h3>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/priimalna-komisija/" target="_blank">Приймальна комісія</a> </li>
+          <li class="listNone">  <a class="listyle" href="http://www.lute.lviv.ua/admissions/podacha-elektronnoji-zajavi/" target="_blank">Подача електронної заяви</a></li>
+          <li class="listNone">  <a class="listyle" href="http://www.lute.lviv.ua/admissions/rules/" target="_blank">Правила прийому</a></li>
+          <li class="listNone">  <a class="listyle" href="http://www.lute.lviv.ua/admissions/gss/" target="_blank">Галузі знань та спеціальності</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/vstupni-viprobuvannja/reitingovi-spiski/" target="_blank">Рейтингові списки</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/documents/dokumenti-neobkhidni-dlja-vstupu/" target="_blank">Документи необхідні для вступу</a></li>
+        </div>
+        <div class="forNewBox">
+          <h3>Загальна інформація</h3>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/vstupni-viprobuvannja/perelik-konkursnikh-predmetiv/" target="_blank">Перелік конкурсних предметів</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/vstupni-viprobuvannja/rozklad-vstupnikh-viprobuvan/" target="_blank">Розклад вступних випробувань</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/vstupni-viprobuvannja/rezultati-vstupnikh-viprobuvan/" target="_blank">Результати вступних випробувань</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/osvita-inozemnikh-gromadjan/?L=806" target="_blank">Інформація для іноземців</a></li>
+        </div>
+        <div class="forNewBox">
+          <h3>Документи</h3>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/fileadmin/www.lac.lviv.ua/data/Abitura/LAC_Documents/Pravyla_Pryyomu/2020/2020_ReklPravKorotko.pdf" target="_blank">Основні положення правил прийому</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/documents/dozvilni-dokumenti/" target="_blank">Дозвільні документи</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/admissions/documents/licenziini-obsjagi-priiomu/" target="_blank">Ліцензійні обсяги прийому</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/fileadmin/www.lac.lviv.ua/data/Abitura/LAC_Documents/Pravyla_Pryyomu/2018/2018_Dodatok_1.pdf" target="_blank">Вартість навчання</a></li>
+          <li class="listNone"> <a class="listyle" href="http://www.lute.lviv.ua/fileadmin/www.lac.lviv.ua/data/Abitura/LAC_Documents/Gutrozh_Polozhen/2016/LCA_Polozh_Pro_Gurtozh_2016.pdf" target="_blank">Положення про поселення у гуртожиток</a></li>
+        </div>
+     <!-- ////////////  + Вся інформація -->
+    </div>
+    <div class="guide">
+      <a href="http://www.lute.lviv.ua/fileadmin/www.lac.lviv.ua/data/Abitura/LAC_Documents/Putivnik/Putivnik_vstupnika_Bakalavr.pdf" target="_blank">Путівник вступника</a>
+    </div>
+    
+    <!-- //////////// -->
+
+
+    <!-- ///////////// -->
+    <div class="searchFacultyContainer">
+      <div class="facultyButtons">
+        <p (click)="setFaculty()">Факультет </p>
+        <p (click)="setNameSearch()" id="pFaculty">Спеціальність</p>
+        <p (click)="setSearch()">Предмети ЗНО</p>
+      </div>
+
+      <div class="facultyList" *ngIf="facultyList">
+        <!-- ///////// :hover фото факультету/іконка на background -->
+            <div class="facult alignCenter mev" [routerLink]="['/faculty-mev']">
+            <p class="nameFaculties" ><a [routerLink]="['/faculty-mev']" >МЕВ</a></p>
+            </div>
+            <div class="facult alignCenter tuso" [routerLink]="['/faculty-tuso']">
+            <p class="nameFaculties"><a [routerLink]="['/faculty-tuso']">ТУСО</a></p>
+            </div>
+            <div class="facult alignCenter if" [routerLink]="['/faculty-ief']">
+            <p class="nameFaculties"><a [routerLink]="['/faculty-ief']">ІЕФ</a></p>
+            </div>
+            <div class="facult alignCenter urf" [routerLink]="['/faculty-uf']">
+            <p class="nameFaculties"><a [routerLink]="['/faculty-uf']">ЮФ</a></p>
+            </div>
+      </div>
+      <div class="facultyNames" *ngIf="facultyNameSearch">
+        <p>Введіть назву спеціальності для пошуку: </p>  
+        <input type="text" [(ngModel)]="searchP" name="searchP">
+      
+          <table class="table">
+            <thead>
+                <th>Код: </th>
+                <th>Освітня програма</th>
+                <th id="pred">Предмети ЗНО</th>
+            </thead>
+            <tbody>
+                    <tr *ngFor="let item of specsList | search: searchP ; let i = index">
+                        <td>{{item.spCode}}</td>
+                        <td>{{item.specName}}</td> 
+                        
+                        <td id="pred" class="tooltip">
+                          <div class="imm"></div>
+                          <span class="tooltiptext">Українська мова та література, {{item.predmetAll}}</span>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        
+      </div>
+      <div class="facultySearch" *ngIf="facultySearch">
+          <p>Вкажіть предмети:</p>
+            <div class="newFacSpec">
+                <form [formGroup]="predmetForm">
+                    <select (ngModelChange)="setPr1($event)" formControlName="pr1Control" [disabled]="true" >
+                        <option >Українська мова та література</option>
+                    </select>
+                    <select (ngModelChange)="setPr2($event)" formControlName="pr2Control">
+                      <option [value]="pr2" *ngFor="let pr2 of predmet">{{pr2}}</option>
+                    </select>
+                    <select (ngModelChange)="setPr3($event)" formControlName="pr3Control">
+                        <option [value]="pr3" *ngFor="let pr3 of predmet">{{pr3}}</option>
+                    </select>
+                    <select (ngModelChange)="setPr4($event)" formControlName="pr4Control">
+                        <option [value]="pr4" *ngFor="let pr4 of predmet">{{pr4}}</option>
+                    </select>
+                </form>
+                <div class="buttonSearch" (click)="searchPredm()">Спеціальності ⇀</div>
+            </div>
+            
+        
+        
+            <table class="table">
+                <thead>
+               
+                  <th>Код: </th>
+                  <th>Освітня програма</th>
+                </thead>
+                <tbody>
+                        <tr *ngFor="let item of outputPR; let i = index">
+                        
+                            <td>{{item.spCode}}</td>
+                            <td>{{item.specName}}</td> 
+                        </tr>
+                        
+                </tbody>
+            </table>
+      </div>
+    </div>
+   
+                         
+                   
+  </div>
+</body>
+
+<app-footer></app-footer>

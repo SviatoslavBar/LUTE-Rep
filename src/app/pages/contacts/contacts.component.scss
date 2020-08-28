@@ -1,0 +1,167 @@
+.container{
+    width: 1100px;
+    margin: 0 auto;
+    font-family: roboto;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: 200;
+}
+.box1,.box2{
+    display: flex;
+}
+.box1{
+    margin-bottom: 100px;
+}
+.background{
+    width: 100%;
+    height: 500px;
+    background-image: url(/assets/images/backAbit3.jpg);
+    background-position-y: -110px;
+    background-size: cover;
+    left: 0;
+    top: 0px;
+    font-family: roboto;
+}
+.h1_underline{
+    font-size: 50px;
+    margin-left: 60px;
+    font-family: roboto;
+    margin-bottom: 50px;
+}
+.frame{
+    margin-top: 100px;
+    font-size: 48px;
+}
+.leftBox,.rightBox{
+    width: 550px;
+    height: 200px;
+    padding: 10px;
+}
+.rightBox{
+    padding-left: 60px;
+}
+.frameMargin{
+    margin-bottom: 50px;
+}
+.adress,.adressGurt{
+    width: 550px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.adress{
+    justify-content: flex-start;
+}
+.ad1,.ad2,.ad3{
+    width: 300px;
+    padding: 10px;
+   
+}
+.adBox1{
+    width: 210px;
+    height: 210px;
+   
+    background: url(src/assets/images/imgLocation.png);
+    background-size: cover;
+}
+.agBox1{
+    width: 210px;
+    height: 210px;
+
+    background: url(src/assets/images/location.png);
+    background-size: cover;
+}
+.backColor{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 500px;
+    /* background: lightgoldenrodyellow; */
+    background: #c7ebc7;
+    left: 0;
+    margin-top: -500px;
+}
+
+.tel{
+    color: #006400;
+    text-decoration: none;
+}
+@media screen and (max-width: 1150px) { //////////// маленькі екрани або ноутбуки
+    .container{
+        width: 750px;
+    }
+    .adress,.adressGurt{
+        width: 750px;
+        justify-content: center;
+    }
+    .box2{
+        flex-direction: column;
+    }
+    .backColor{
+        height: 820px;
+        margin-top: -820px;
+    }
+    .agBox1{
+        height: 230px;
+    }
+    .adressGurt{
+        margin-top: 80px;
+    }
+
+}
+
+@media screen and (max-width: 768px) { //////////// планшети
+    .container {
+        width: 460px;
+    }
+    .adress,.adressGurt{
+        width: 460px;
+    }
+    .adBox1{
+        width: 160px;
+        height: 160px;
+    }
+    .agBox1{
+        width: 160px;
+        height: 177px;
+    }
+
+}
+
+@media screen and (max-width: 480px) { //////////// телефони
+    .container{
+        width: 90%;
+    }
+    .h1_underline{
+        margin-left: 45px;
+    }
+    .adress,.adressGurt{
+        width: 100%;
+        flex-direction: column;
+    }
+    .ad1,.ad2,.ad3{
+        width: unset;
+    }
+    .adBox1{
+        width: 150px;
+        height: 150px;
+    }
+    .agBox1{
+        width: 160px;
+        height: 176px;
+    }
+    .rightBox{
+        padding-left: 0px;
+    }
+    .leftBox,.rightBox{
+        height: unset;
+    }
+    .backColor{
+        margin-top: -1090px;
+        height: 1090px;
+    }
+    .box1{
+        margin-bottom: 140px;
+    }
+
+}

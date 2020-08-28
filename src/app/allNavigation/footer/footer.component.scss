@@ -1,0 +1,16 @@
+@import "src/app/styles/stylesMain/_footer.scss";
+
+.creator{
+    display: flex;
+    font-size: 15px;
+    color: #525252;
+    padding-bottom: 15px;
+    a{
+        width: unset;
+        margin-left: 5px;
+    }
+}
+.creatorBox{
+    width: 190px;
+    margin: 0 auto;
+}

@@ -1,0 +1,267 @@
+
+@font-face {
+    font-family: roboto-regular;
+    src: url(src/assets/font/Roboto-Regular.ttf);
+  }
+  @font-face {
+    font-family: roboto-bold;
+    src: url(src/assets/font/Roboto-Bold.ttf);
+  }
+  
+
+ h2{
+    font-family: roboto-bold;
+ } 
+
+.background{
+    width: 100%;
+    height: 500px;
+    background-image: url(/assets/images/history_back.jpg);
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 0px;
+}
+
+.h1_underline{
+    font-family: roboto-bold;
+    margin: 100px 0px 80px 0px;
+    border-bottom: 2px solid;
+    width: 700px;
+    font-size: 60px;
+    padding-top: 26px;
+    color: white;
+    margin-left: 60px;
+}
+.nameContainer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.name{
+    font-family: roboto-bold;
+    font-size: 180px;
+    color: white;
+    margin-left: 60px;
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.fullName{
+    font-size: 60px;
+    width: 800px;
+    height: 60px;
+}
+.about{
+    font-size: 20px;
+    margin-bottom: 50px;
+    width: 671px;
+    font-family: roboto-regular;
+    font-size:19px;
+}
+.year{
+    font-size: 300px;
+    width: 345px;
+    position: sticky;
+    top: 20%;
+    font-family: roboto-bold;
+    margin-bottom: 156px;
+}
+.yearOne{
+    font-family: roboto-bold;
+    font-size: 300px;
+    width: 345px;
+}
+.yearRight{
+    font-family: roboto-bold;
+    font-size: 300px;
+    width: 360px;
+}
+.numbersContainer{
+    margin-top: 100px;
+    display: flex;
+}
+.leftNumber{
+    height: 2080px;
+}
+
+.historyInfo{
+    width: 400px;
+    border-left: 2px solid black;
+    height: 220px;
+    margin-top: 60px;
+  
+    padding-left: 25px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    font-family: roboto-regular;
+    font-size:19px;
+}
+.infoContainer{
+    display: flex;
+    margin-bottom: 160px;
+}
+.leftNumberSecond{
+    height: 2080px;
+}
+.numbersContainerLast{
+    margin-top: 100px;
+    display: block;
+}
+.historyInfoLast{
+    border-top: 2px solid black;
+    height: 100px;
+    margin-top: 60px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    font-family: roboto-regular;
+    font-size:19px;
+}
+.divider{
+    transform: rotate(90deg);
+    width: 5px;
+    font-size: 24px;
+}
+
+
+
+@media screen and (max-width: 1150px) {
+
+    .container{
+        width: 800px;
+    }
+    .year{
+        font-size: 200px;
+        width: 230px;
+    }
+    .yearRight{
+        font-size: 200px;
+        width: 230px;
+    }
+    .historyInfo{
+        width: unset;
+        height: unset;
+        justify-content: center;
+    }
+    .leftNumber{
+        height: 1815px;
+    }
+    .leftNumberSecond{
+        height: 1625px;
+    }
+    .yearOne{
+        font-size: 200px;
+        width: 230px;
+    }
+
+
+
+
+}
+@media screen and (max-width: 840px) {
+
+    .container{
+        width: 740px;
+    }
+    .infoContainer{
+        flex-direction: column;
+    }
+    .h1_underline{
+        width: unset;
+    }
+    .fullName{
+        font-size: 54px;
+        width: unset;
+    }
+    .about{
+        width: unset;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .name{
+        font-size: 140px;
+    }
+    .container{
+        width: 460px;
+        margin-bottom: 400px;
+    }
+    .fullName{
+        height: unset;
+    }
+    .leftNumber{
+        height: 2285px;
+    }
+    .historyInfo{
+        margin-left: -228px;
+    }
+    .leftNumberSecond{
+        height: 2098px;
+    }
+    .historyInfoLast{
+        height: unset;
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .name{
+        font-size: 110px;
+    }
+    .container{
+        width: 95%;
+    }
+    .year,.yearRight,.yearOne{
+        font-size: 150px;
+        width: 175px;
+        margin-bottom: 0;
+    }
+    .historyInfo{
+        margin-left: -164px;
+        padding-left: 10px;
+        margin-top: 20px;
+    }
+    .leftNumber{
+        height: 1908px;
+    }
+    .leftNumberSecond{
+        height: 1679px;
+    }
+    .fullName{
+        font-size: 50px;
+        width: 95%;
+    }
+}
+@media screen and (max-width:373px){
+    .name{
+        font-size: 95px;
+    }
+    .fullName{
+        font-size: 40px;
+    }
+
+    .year,.yearRight,.yearOne{
+        font-size: 130px;
+        width: 148px;
+    }
+    .historyInfo{
+        margin-left: -125px;
+        font-size: 17px;
+    }
+    .leftNumber{
+        height: 1924px;
+    }
+    .leftNumberSecond{
+        height: 1746px;
+    }
+}

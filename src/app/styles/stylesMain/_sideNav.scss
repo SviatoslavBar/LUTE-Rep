@@ -1,0 +1,111 @@
+*{
+    font-family: roboto;
+    font-weight: 300;
+}
+  
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 501;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+  
+}
+
+.sidenavmore {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+    z-index: 500;
+}
+
+.sidenav a,
+.sidenavmore a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 21px;
+    color: #afafaf;
+    display: block;
+    transition: 0.3s;
+    width: 250px;
+    cursor: pointer;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenavmore a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.closebtn {
+    width: 60px !important;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .closebtn {
+        width: 40px !important;
+        padding: 0 !important;
+        left: 0px !important;
+        margin-left: 0px !important;
+        top: 10px !important;
+        
+    }
+    .sidenav {
+        padding-top: 50px;
+     a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 24px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        width: 300px;
+        cursor: pointer;
+        text-align: right;
+        margin: 0 auto;
+    }
+}
+
+    .sidenavmore{
+        padding-top: 50px;
+        background: rgba(0, 0, 0, 0.8);
+        a{
+            padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 27px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+        width: 300px;
+        cursor: pointer;
+        text-align: right;
+        margin: 0 auto;
+        
+        }
+    }
+}
